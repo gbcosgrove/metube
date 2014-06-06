@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'movies/show_gladiator'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +55,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  get '/movies/gladiator', to: 'movies#show_gladiator'
+  get '/movies/matilda', to: 'movies#show_matilda'
 end
