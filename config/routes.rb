@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'shows/show_seinfeld'
+
   get 'movies/show_gladiator'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -60,4 +62,9 @@ Rails.application.routes.draw do
   get '/movies/matilda', to: 'movies#show_matilda'
   get '/movies/keyboard_cat', to: 'movies#show_keyboard_cat'
   get '/movies/mentos', to: 'movies#show_mentos'
+
+  # shows
+  get '/shows/seinfeld', to: 'shows#show_seinfeld'
+  get '/shows/friends', to: 'shows#show_friends'
+  get '/shows/breakingbad', to: 'shows#show_breakingbad'
 end
