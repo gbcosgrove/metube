@@ -58,4 +58,6 @@ Rails.application.routes.draw do
 
   get '/movies/gladiator', to: 'movies#show_gladiator'
   get '/movies/matilda', to: 'movies#show_matilda'
+  get '/movies/keyboard_cat', to: 'movies#show_keyboard_cat'
+  get '/movies/mentos', to: 'movies#show_mentos'
 end
